@@ -1,0 +1,12 @@
+@use "../abstracts/variables/colors" as colors;
+
+.cform-block {
+    background-color: colors.$color__dark-blue;
+    color: colors.$color__primary-white;
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+    }
+}

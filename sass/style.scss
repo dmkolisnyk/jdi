@@ -51,52 +51,53 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 --------------------------------------------------------------*/
 
 // Import variables and mixins.
-@import "abstracts/abstracts";
-
-/*--------------------------------------------------------------
-# Generic
---------------------------------------------------------------*/
+@use "abstracts/abstracts";
 
 /* Normalize
 --------------------------------------------- */
-@import "generic/normalize";
+@use "generic/normalize";
 
 /* Box sizing
 --------------------------------------------- */
-@import "generic/box-sizing";
+@use "generic/box-sizing";
 
-/*--------------------------------------------------------------
-# Base
---------------------------------------------------------------*/
-@import "base/base";
-
-/*--------------------------------------------------------------
-# Layouts
---------------------------------------------------------------*/
-// @import "layouts/content-sidebar"; // Uncomment this line for a sidebar on right side of your content.
-// @import "layouts/sidebar-content"; // Uncomment this line for a sidebar on left side of your content.
-
-/*--------------------------------------------------------------
-# Components
---------------------------------------------------------------*/
-@import "components/components";
-
-/*--------------------------------------------------------------
-# Plugins
---------------------------------------------------------------*/
-
-/* Jetpack infinite scroll
+/* Base
 --------------------------------------------- */
-@import "plugins/jetpack/infinite-scroll";
+@use "base/base";
 
-/*--------------------------------------------------------------
-# Utilities
---------------------------------------------------------------*/
+/* Components
+--------------------------------------------- */
+@use "components/components";
 
 /* Accessibility
 --------------------------------------------- */
-@import "utilities/accessibility";
+@use "utilities/accessibility";
 
 /* Alignments
 --------------------------------------------- */
-@import "utilities/alignments";
+@use "utilities/alignments";
+
+/* Layouts
+--------------------------------------------- */
+@use "layouts/reviews";
+
+@use "layouts/services";
+
+@use "layouts/cform";
+
+
+.section {
+	padding: 50px 0;
+}
+
+.container {
+    max-width: 1208px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}

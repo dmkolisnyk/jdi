@@ -1,14 +1,16 @@
+@use "../../abstracts/variables/colors" as colors;
+@use "../../abstracts/variables/typography" as fonts;
+@use "headings";
+@use "copy";
+
 body,
 button,
 input,
 select,
 optgroup,
 textarea {
-	color: $color__text-main;
-	font-family: $font__main;
+	color: colors.$color__text-main;
+	font-family: fonts.$font__main;
 	font-size: 1rem;
-	line-height: $font__line-height-body;
+	line-height: fonts.$font__line-height-body;
 }
-
-@import "headings";
-@import "copy";

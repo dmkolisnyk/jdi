@@ -1,0 +1,46 @@
+@use "../abstracts/variables/colors" as colors;
+
+.reviews-carousel {
+    padding: 100px 0 0 0 !important;
+
+    .reviews-carousel__pagination {
+        height: 0;
+	    top: 50px !important;
+    }
+}
+
+.review-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid colors.$color__light-blue;
+    border-radius: 16px;
+
+    .review-card__person {
+        display: flex;
+        border-radius: 16px 16px 0 0;
+        padding: 20px 32px;
+        background-color: colors.$color__light-blue;
+
+        .review-card__person-left {
+            border-radius: 100px;
+            height: 64px;
+            margin-inline-end: 11px;
+            min-width: 64px;
+            overflow: hidden;
+            width: 64px;
+        }
+
+        .review-card__person-right {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .review-card__content {
+        display: flex;
+        flex-direction: column;
+        padding: 32px 32px 40px;
+        width: 100%;
+    }
+}
